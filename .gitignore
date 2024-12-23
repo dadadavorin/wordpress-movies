@@ -46,3 +46,6 @@ latest_dump
 # Dev environment
 .valet-env.php
 .vscode/*
+
+/wp-admin
+/wp-includes
