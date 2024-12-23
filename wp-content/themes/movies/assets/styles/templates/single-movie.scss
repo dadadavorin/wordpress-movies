@@ -1,7 +1,11 @@
 .single-movie-template {
+	padding: 1rem;
+	border-radius: 0.4rem;
+	background-color: var(--global-colors-black300);
+
 	@include media(desktop up) {
 		display: grid;
-		grid-template-columns: 1fr 2fr;
+		grid-template-columns: 16rem 2fr;
 		grid-template-rows: 1fr 0.5fr 3.5fr;
 		column-gap: 3rem;
 	}
@@ -27,16 +31,19 @@
 	}
 
 	&__genre-link {
-		color: var(--global-colors-black);
+		color: #fff;
 		text-decoration: none;
-		background-color: var(--global-colors-gray100);
-		padding: 0.3rem 0.8rem;
-		border-radius: 0.4rem;
+		background-color: transparent;
+
+		padding: 0.4rem 0.8rem;
+		border-radius: 1rem;
+		border: 1px solid var(--global-colors-white);
+
 		transition: 0.2s background-color ease-in-out;
 
 		&:hover,
 		&:focus {
-			background-color: var(--global-colors-gray200);
+			background-color: var(--global-colors-black400);
 		}
 	}
 
@@ -48,13 +55,17 @@
 	}
 
 	&__image {
-		width: 16rem;
-		height: 23rem;
+		width: 100%;
+		height: 27rem;
+
 		display: block;
 		overflow: hidden;
 		position: relative;
 
 		@include media(desktop up) {
+			width: 16rem;
+			height: 23rem;
+
 			grid-column: 1 / 2;
 			grid-row: 1 / 4;
 		}
@@ -63,8 +74,10 @@
 	&__image img {
 		width: 100%;
 		height: 100%;
+
 		object-fit: cover;
 		object-position: center;
 		display: block;
+		border-radius: 0.4rem;
 	}
 }

@@ -84,7 +84,7 @@ class MoviesPostType extends AbstractPostType
 			'show_in_menu' => true,
 			'query_var' => true,
 			'capability_type' => self::POST_CAPABILITY_TYPE,
-			'has_archive' => false,
+			'has_archive' => true,
 			'rewrite' => ['slug' => static::POST_TYPE_URL_SLUG, 'with_front' => false],
 			'hierarchical' => false,
 			'menu_icon' => static::MENU_ICON,

@@ -21,7 +21,7 @@
 		},
 		"paragraphColor": {
 			"type": "string",
-			"default": "black"
+			"default": "white"
 		},
 		"paragraphUse": {
 			"type": "boolean",

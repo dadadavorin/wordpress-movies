@@ -69,6 +69,21 @@
 				"color": "#14142B"
 			},
 			{
+				"name": "Black 200",
+				"slug": "black200",
+				"color": "#1f1f1f"
+			},
+			{
+				"name": "Black 300",
+				"slug": "black300",
+				"color": "#171717"
+			},
+			{
+				"name": "Black 400",
+				"slug": "black400",
+				"color": "#373737"
+			},
+			{
 				"name": "Gray 900",
 				"color": "#2C2C40",
 				"slug": "gray900"
@@ -85,7 +100,7 @@
 			},
 			{
 				"name": "Gray 600",
-				"color": "#727280",
+				"color": "#919191",
 				"slug": "gray600"
 			},
 			{

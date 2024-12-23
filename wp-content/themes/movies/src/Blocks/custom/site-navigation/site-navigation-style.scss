@@ -10,7 +10,6 @@
 	align-items: center;
 	gap: 2.5rem;
 
-	background-color: rgb(var(--global-colors-white-values) / 0.8);
 	border-bottom: 1px solid rgb(var(--global-colors-gray100-values) / 0);
 
 	backdrop-filter: blur(1.5rem) saturate(1.5) brightness(1.25);
@@ -53,9 +52,10 @@
 		text-underline-offset: 0.1em;
 		font-size: 1.12rem;
 		font-family: var(--secondary-font-family);
+		color: var(--global-colors-white);
 
 		&:hover {
-			color: var(--global-colors-primary500);
+			color: var(--global-colors-gray200);
 
 			text-decoration: none;
 		}
