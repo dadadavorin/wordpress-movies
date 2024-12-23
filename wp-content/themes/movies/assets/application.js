@@ -11,6 +11,7 @@ import './styles/application.scss';
 
 // // Load Scripts
 import './scripts/application';
+import './scripts/filtering/filterMovies'
 
 // Load images
 import './images';
