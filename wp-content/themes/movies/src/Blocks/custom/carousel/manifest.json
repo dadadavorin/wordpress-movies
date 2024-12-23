@@ -1,0 +1,64 @@
+{
+	"$schema": "https://raw.githubusercontent.com/infinum/eightshift-frontend-libs/develop/schemas/block.json",
+	"blockName": "carousel",
+	"title": "Carousel",
+	"description" : "Carousel block with custom settings.",
+	"category": "eightshift",
+	"icon": {
+		"src": "es-carousel"
+	},
+	"keywords": [
+		"carousel"
+	],
+	"hasInnerBlocks": true,
+	"attributes": {
+		"carouselAllowedBlocks": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"default": [
+				"eightshift-boilerplate/image"
+			]
+		},
+		"carouselIsLoop": {
+			"type": "boolean",
+			"default": true
+		},
+		"carouselShowItems": {
+			"type": "number",
+			"default": 1
+		},
+		"wrapperSimple": {
+			"type": "boolean",
+			"default": true
+		},
+	  	"wrapperIsFullWidthLarge": {
+		  	"type": "boolean",
+		  	"default": true
+		},
+	  	"wrapperWidthLarge": {
+		  	"type": "integer",
+		  	"default": 14
+		},
+		"wrapperWidthMobile": {
+		  "type": "integer",
+		  "default": 14
+		},
+		"carouselHeadingSize": {
+			"type": "string",
+			"default": "h5:bold"
+		}
+	},
+	"options": {
+		"carouselItemsToShow": {
+			"min": 1,
+			"max": 2,
+			"step": 1
+		}
+	},
+	"components": {
+		"icon": "icon",
+		"heading": "heading"
+	}
+}
