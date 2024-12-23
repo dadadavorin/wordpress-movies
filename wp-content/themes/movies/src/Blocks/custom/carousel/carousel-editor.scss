@@ -1,0 +1,15 @@
+.block-carousel {
+	.block-editor-block-list {
+		&__layout {
+			display: flex;
+			align-items: flex-start;
+			gap: 1rem;
+			width: 100%;
+			overflow-x: scroll;
+		}
+
+		&__block {
+			min-width: 25%;
+		}
+	}
+}
