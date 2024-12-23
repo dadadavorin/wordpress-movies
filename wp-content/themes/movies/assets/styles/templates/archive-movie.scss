@@ -1,4 +1,10 @@
 .archive-movie-template {
+	// Predefined variables used when fetching data from the API.
+	--paragraph-font-size: 1rem;
+	--paragraph-line-height: 1.39;
+	--paragraph-font-weight: normal;
+	--paragraph-color: var(--global-colors-white);
+
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
 	grid-template-rows: auto;
@@ -47,5 +53,13 @@
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
+	}
+
+	&__filter {
+		padding-bottom: 2rem;
+
+		label {
+			margin-right: 1rem;
+		}
 	}
 }

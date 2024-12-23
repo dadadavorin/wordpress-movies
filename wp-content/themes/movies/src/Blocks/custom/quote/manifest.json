@@ -11,9 +11,9 @@
 		"quote"
 	],
 	"attributes": {
-		"wrapperSimple": {
+		"wrapperUse": {
 			"type": "boolean",
-			"default": true
+			"default": false
 		},
 		"wrapperSpacingTopLarge": {
 			"type": "integer",

@@ -9,9 +9,27 @@
 get_header();
 
 $movieArchiveClass = 'archive-movie-template';
+
+// Fetch all genre terms.
+$genres = get_terms([
+	'taxonomy' => 'genre',
+	'hide_empty' => true,
+]);
 ?>
 
-    <article class="<?php echo esc_attr($movieArchiveClass); ?>">
+    <div class="<?php echo esc_attr($movieArchiveClass); ?>__filter">
+        <label for="movie-genre">Filter by Genre:</label>
+        <select id="movie-genre" name="movie-genre">
+            <option value="">All Genres</option>
+			<?php foreach ($genres as $genre) : ?>
+                <option value="<?php echo esc_attr($genre->slug); ?>">
+					<?php echo esc_html($genre->name); ?>
+                </option>
+			<?php endforeach; ?>
+        </select>
+    </div>
+
+    <section id="movie-list" class="<?php echo esc_attr($movieArchiveClass); ?>">
 		<?php
 		if (have_posts()) {
 			while (have_posts()) {
@@ -33,7 +51,7 @@ $movieArchiveClass = 'archive-movie-template';
 			}
 		}
 		?>
-    </article>
+    </section>
 
 <?php
 get_footer();
