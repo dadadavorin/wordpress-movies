@@ -9,19 +9,19 @@
 		"Gutenberg",
 		"WordPress"
 	],
-	"homepage": "/",
+	"homepage": "https://github.com/dadadavorin/",
 	"license": "MIT",
 	"authors": [
 		{
 			"name": "Davorin Prislin",
 			"email": "davorin@digitalage.hr",
-			"homepage": "",
+			"homepage": "https://github.com/dadadavorin/",
 			"role": "WordPress Developer"
 		}
 	],
 	"support": {
-		"issues": "",
-		"source": ""
+		"issues": "https://github.com/dadadavorin/",
+		"source": "https://github.com/dadadavorin/"
 	},
 	"require-dev": {
 		"dealerdirect/phpcodesniffer-composer-installer": "^v1.0.0",
