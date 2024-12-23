@@ -72,6 +72,8 @@ class Blocks extends AbstractBlocks
 			);
 		}
 
+		$allowedBlocks[] = 'core/shortcode';
+
 		// Don't allow blocks which are specific to MoviesPostType on other post types.
 		if ($blockEditorContext->post && $blockEditorContext->post->post_type !== MoviesPostType::POST_TYPE_SLUG) {
 			$allowedBlocks = $this->unsetBlocks($allowedBlocks, $this->moviesCptOnlyBlocks());
