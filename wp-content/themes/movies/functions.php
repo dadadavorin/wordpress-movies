@@ -47,3 +47,5 @@ if (\class_exists(Main::class)) {
 if (\class_exists(Cli::class)) {
 	(new Cli())->load('boilerplate');
 }
+
+add_theme_support('post-thumbnails');

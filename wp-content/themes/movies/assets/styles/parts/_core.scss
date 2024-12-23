@@ -26,15 +26,15 @@ body {
 }
 
 main#main-content, .block-site-navigation {
-	max-width: 1200px;
+	max-width: 75rem;
 	margin: 0 auto;
-}
-
-h1, h2, h3 {
-	font-family: var(--secondary-font-family);
 }
 
 a {
 	text-decoration: none;
 }
 
+main {
+	padding-top: 8rem;
+	padding-inline: var(--global-grid-side-padding);
+}

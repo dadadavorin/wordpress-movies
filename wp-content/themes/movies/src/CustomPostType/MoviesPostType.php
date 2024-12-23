@@ -22,7 +22,7 @@ class MoviesPostType extends AbstractPostType
 	 *
 	 * @var string
 	 */
-	public const POST_TYPE_SLUG = 'movies';
+	public const POST_TYPE_SLUG = 'movie';
 
 	/**
 	 * URL slug for the custom post type.
@@ -36,7 +36,7 @@ class MoviesPostType extends AbstractPostType
 	 *
 	 * @var string
 	 */
-	public const REST_API_ENDPOINT_SLUG = 'movies';
+	public const REST_API_ENDPOINT_SLUG = 'movie';
 
 	/**
 	 * Capability type for projects post type.
