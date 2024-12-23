@@ -9,7 +9,11 @@ body .editor-styles-wrapper {
 	@include font-smoothing;
 	font-family: var(--global-font-family);
 	color: var(--global-colors-black);
-	background-color: var(--global-colors-white);
+	background-color: var(--global-colors-gray500);
+
+	@include media(desktop up) {
+		padding-inline: 10rem;
+	}
 }
 
 // Sets base font size value only to editor part.

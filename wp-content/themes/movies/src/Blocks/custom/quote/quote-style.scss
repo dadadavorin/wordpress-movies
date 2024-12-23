@@ -1,0 +1,15 @@
+.block-quote {
+	text-align: var(--quote-align);
+
+	border-left: 4px solid var(--quote-border-color);
+	padding-left: 2.5rem;
+
+	&__paragraph {
+		margin-bottom: 0.7rem;
+		font-style: italic;
+	}
+
+	&__movie {
+		margin-bottom: 0.2rem;
+	}
+}
