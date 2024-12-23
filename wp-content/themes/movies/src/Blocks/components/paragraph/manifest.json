@@ -65,7 +65,9 @@
 			"white",
 			"black",
 			"primary500",
-			"navy"
+			"navy",
+			"gray100",
+			"gray300"
 		]
 	},
 	"variables": {
@@ -360,6 +362,22 @@
 				{
 					"variable": {
 						"paragraph-color": "var(--global-colors-navy)",
+						"paragraph-link-color": "var(--global-colors-primary700)"
+					}
+				}
+			],
+			"gray100": [
+				{
+					"variable": {
+						"paragraph-color": "var(--global-colors-gray100)",
+						"paragraph-link-color": "var(--global-colors-primary700)"
+					}
+				}
+			],
+			"gray300": [
+				{
+					"variable": {
+						"paragraph-color": "var(--global-colors-gray300)",
 						"paragraph-link-color": "var(--global-colors-primary700)"
 					}
 				}
